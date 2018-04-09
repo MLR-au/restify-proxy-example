@@ -38,7 +38,7 @@ The tags are required as these are used in the compose file
 
 ## Starting and stopping the containers
 
-To start the containers `./start.sh`. Likewise, to stop them: './stop.sh'
+To start the containers `./start.sh`. Likewise, to stop them: `./stop.sh`
 
 ## Logging
 
