@@ -1,0 +1,23 @@
+{
+    "name": "gateway",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "develop": "./node_modules/nodemon/bin/nodemon.js ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.17.3"
+    },
+    "dependencies": {
+        "app-module-path": "^2.2.0",
+        "express-validator": "^5.1.2",
+        "http-proxy": "^1.16.2",
+        "request": "^2.85.0",
+        "request-promise-native": "^1.0.5",
+        "restify": "^7.1.0",
+        "restify-errors": "^6.0.0"
+    }
+}

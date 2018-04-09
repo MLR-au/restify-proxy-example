@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+    gateway:
+        image: play/gateway
+        hostname: gateway
+        tty: true
+        environment: &environment
+            TERM: "xterm-256color"
+            NODE_ENV: "development"
+            DEBUG: "inteja:*"
+        mem_limit: 256M
+        volumes:
+            - ~/src/inteja/proxy-play/gateway:/srv/inteja/gateway
+        command: [ 'yarn', 'develop']
+        ports:
+            - 8080:8080
+
+    backend:
+        image: play/backend
+        hostname: backend
+        tty: true
+        environment: *environment
+        mem_limit: 256M
+        volumes:
+            - ~/src/inteja/proxy-play/backend:/srv/inteja/backend
+        command: [ 'yarn', 'develop']
