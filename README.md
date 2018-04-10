@@ -1,5 +1,7 @@
 # Example Restify Proxy Setup
 
+Thanks to [https://gist.github.com/jeffwhelpley/5417758](https://gist.github.com/jeffwhelpley/5417758).
+
 ## Preamble
 
 I needed to figure out how to proxy certain restify endpoints back to other
